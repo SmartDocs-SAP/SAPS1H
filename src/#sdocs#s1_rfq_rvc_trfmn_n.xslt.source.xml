@@ -1,0 +1,155 @@
+<xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sap="http://www.sap.com/sapxsl" version="1.0">
+  <xsl:output encoding="iso-8859-1" method="xml" version="1.0"/>
+  <xsl:strip-space elements="*"/>
+  <xsl:template match="/">
+    <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+      <asx:values>
+        <RFX_BID>
+          <xsl:apply-templates select="//RFX_BIDS/RFX_BID"/>
+        </RFX_BID>
+        <BIDDERS>
+          <xsl:apply-templates select="//RFX_BIDS/RFX_BID/BIDDERS/BIDDER"/>
+        </BIDDERS>
+         <LINEITEMS>
+          <xsl:apply-templates select="//RFX_BIDS/RFX_BID/BIDDERS/BIDDER/LINEITEMS/LINEITEM"/>
+        </LINEITEMS>
+        <ATTCHMNTS>
+          <xsl:apply-templates select="//RFX_BIDS/RFX_BID/BIDDERS/BIDDER/ATTCHMNTS/ATTCHMNT"/>
+        </ATTCHMNTS>
+         <LOGS>
+          <xsl:apply-templates select="//RFX_DATA_RECEIVE/RFX_DATA/LOGS/LOG"/>
+        </LOGS>
+         <COMMENTS>
+          <xsl:apply-templates select="//RFX_DATA_RECEIVE/RFX_DATA/LOGS/COMMENTS/COMMENT"/>
+        </COMMENTS>
+        </asx:values>
+    </asx:abap>
+  </xsl:template>
+
+   <xsl:template match="RFX_BIDS/RFX_BID">
+    <item>
+       <RFXNO>
+        <xsl:value-of select="RFXNO"/>
+      </RFXNO>
+      <SELECTED_BID>
+        <xsl:value-of select="SELECTED_BID"/>
+      </SELECTED_BID>
+     </item>
+  </xsl:template>
+
+ <xsl:template match="RFX_BIDS/RFX_BID/BIDDERS/BIDDER">
+    <item>
+       <RFXNO>
+        <xsl:value-of select="RFXNO"/>
+      </RFXNO>
+      <REF_ID>
+        <xsl:value-of select="REF_ID"/>
+      </REF_ID>
+      <BID_NO>
+        <xsl:value-of select="BID_NO"/>
+      </BID_NO>
+      <BID_COMPANY>
+        <xsl:value-of select="BID_COMPANY"/>
+      </BID_COMPANY>
+       <BID_CNTCT_PERSON>
+        <xsl:value-of select="BID_CNTCT_PERSON"/>
+      </BID_CNTCT_PERSON>
+        <BID_CNTCT_EMAIL>
+        <xsl:value-of select="BID_CNTCT_EMAIL"/>
+      </BID_CNTCT_EMAIL>
+      <TOTAL_AMOUNT>
+        <xsl:value-of select="TOTAL_AMOUNT"/>
+      </TOTAL_AMOUNT>
+        <STATUS>
+        <xsl:value-of select="STATUS"/>
+      </STATUS>
+        <CREATED_BY>
+        <xsl:value-of select="CREATED_BY"/>
+      </CREATED_BY>
+        <CREATED_DATE>
+        <xsl:value-of select="CREATED_DATE"/>
+      </CREATED_DATE>
+     </item>
+  </xsl:template>
+
+     <xsl:template match="RFX_BIDS/RFX_BID/BIDDERS/BIDDER/LINEITEMS/LINEITEM">
+    <item>
+       <REF_ID>
+        <xsl:value-of select="REF_ID"/>
+      </REF_ID>
+       <RFX_ID>
+        <xsl:value-of select="RFX_ID"/>
+      </RFX_ID>
+      <LINENO>
+        <xsl:value-of select="LINENO"/>
+      </LINENO>
+      <PRDCT_ID>
+        <xsl:value-of select="PRDCT_ID"/>
+      </PRDCT_ID>
+       <PRDCT_DES>
+        <xsl:value-of select="PRDCT_DES"/>
+      </PRDCT_DES>
+       <UOM>
+        <xsl:value-of select="UOM"/>
+      </UOM>
+       <DEL_DATE>
+        <xsl:value-of select="DEL_DATE"/>
+      </DEL_DATE>
+       <QTY>
+        <xsl:value-of select="QTY"/>
+      </QTY>
+       <PRDCT_CAT>
+        <xsl:value-of select="PRDCT_CAT"/>
+      </PRDCT_CAT>
+       <SUBSTITUTE_PRT_NO>
+        <xsl:value-of select="SUBSTITUTE_PRT_NO"/>
+      </SUBSTITUTE_PRT_NO>
+       <SUBMITTED_QTY>
+        <xsl:value-of select="SUBMITTED_QTY"/>
+      </SUBMITTED_QTY>
+       <UNIT_PRICE>
+        <xsl:value-of select="UNIT_PRICE"/>
+      </UNIT_PRICE>
+     </item>
+  </xsl:template>
+     <xsl:template match="RFX_BIDS/RFX_BID/BIDDERS/BIDDER/ATTCHMNTS/ATTCHMNT">
+    <item>
+       <REF_ID>
+        <xsl:value-of select="REF_ID"/>
+      </REF_ID>
+       <AR_ID>
+        <xsl:value-of select="AR_ID"/>
+      </AR_ID>
+      <AR_DOCID>
+        <xsl:value-of select="AR_DOCID"/>
+      </AR_DOCID>
+      <FL_NAME>
+        <xsl:value-of select="FL_NAME"/>
+      </FL_NAME>
+       <FL_TYPE>
+        <xsl:value-of select="FL_TYPE"/>
+      </FL_TYPE>
+       <ATTID>
+        <xsl:value-of select="ATTID"/>
+      </ATTID>
+       <CREATOR>
+        <xsl:value-of select="CREATOR"/>
+      </CREATOR>
+       <DOC_TYPE>
+        <xsl:value-of select="DOC_TYPE"/>
+      </DOC_TYPE>
+       <DOC_EXPIRY_DATE>
+        <xsl:value-of select="DOC_EXPIRY_DATE"/>
+      </DOC_EXPIRY_DATE>
+       <DOC_EXPIRY_TIME>
+        <xsl:value-of select="DOC_EXPIRY_TIME"/>
+      </DOC_EXPIRY_TIME>
+       <CREATED_DATE>
+        <xsl:value-of select="CREATED_DATE"/>
+      </CREATED_DATE>
+       <CREATED_TIME>
+        <xsl:value-of select="CREATED_TIME"/>
+      </CREATED_TIME>
+     </item>
+  </xsl:template>
+   </xsl:transform>

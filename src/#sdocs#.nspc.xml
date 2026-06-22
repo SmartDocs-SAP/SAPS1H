@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_NSPC" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <NSPC>
+    <NAMESPACE>/SDOCS/</NAMESPACE>
+    <REPLICENSE>09085910243746132483</REPLICENSE>
+   </NSPC>
+   <NSPC_TEXT>
+    <SPRAS>E</SPRAS>
+    <DESCRIPTN> Namespace for SmartDocs</DESCRIPTN>
+    <OWNER>Ravi</OWNER>
+   </NSPC_TEXT>
+   <CVERS>
+    <COMPONENT>SDOCS</COMPONENT>
+    <RELEASE>780_750</RELEASE>
+    <EXTRELEASE>0000</EXTRELEASE>
+    <COMP_TYPE>C</COMP_TYPE>
+   </CVERS>
+   <CVERS_REF>
+    <COMPONENT>SDOCS</COMPONENT>
+    <LANGU>E</LANGU>
+    <DESC_TEXT>Smart Vendor Portal for SAP Solutions</DESC_TEXT>
+   </CVERS_REF>
+  </asx:values>
+ </asx:abap>
+</abapGit>

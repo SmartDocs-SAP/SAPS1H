@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_XSLT" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <XSLTDESC>/SDOCS/S1_RFQ_RVC_TRFMN_N</XSLTDESC>
+    <LANGU>E</LANGU>
+    <DESCRIPT>RFQ Data Recieve Transformation</DESCRIPT>
+   </ATTRIBUTES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

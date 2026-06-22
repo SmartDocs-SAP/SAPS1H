@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>SDOCS: SaaS Spay Message Class</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Bank Key Mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Please check the profile setup</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>No Data!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Invalid XML!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>No http server is available</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Running in other instance</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>&amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Invoice Total Amount does not match Amount in the Workflow</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Document type does not belongs to credit memo</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>document type does not belongs to invoice</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Balance should be null.Please check</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>WorkItem is not sync with Portal, so again come from STL</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/SDOCS/SSPAY_MSG</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Please Select either of the checkboxes in selection screen.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>
